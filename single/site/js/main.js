@@ -2,11 +2,14 @@
 requirejs.config({
     baseUrl: 'js/lib',
     paths: {
-        app: '../app'
+        app: '../app',
+        domReady: 'require/domReady'
     }
 });
 
-require(['app/singleEventListener'], function (main) {
-    'use strict';
-    require(['app/index']);
-});
+require(
+    [
+        'app/init',
+        'domReady!'
+    ]
+);
