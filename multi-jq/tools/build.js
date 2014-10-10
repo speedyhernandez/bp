@@ -5,7 +5,8 @@
     paths: {
         app: '../app',
         jquery: 'jquery-1.11.1.min',
-        modernizr: 'modernizr-2.8.3.min'
+        modernizr: 'modernizr-2.8.3.min',
+        domReady: 'require/domReady'
     },
     dir: '../build',
     modules: [
@@ -14,7 +15,8 @@
             include: [
                 'jquery',
                 'modernizr',
-                'app/lib'
+                'app/lib',
+                'domReady'
             ]
         },
         {

@@ -2,8 +2,17 @@
 requirejs.config({
     baseUrl: 'js/lib',
     paths: {
-        app: '../app'
+        modernizr: 'modernizr-2.8.3.min',
+        app: '../app',
+        domReady: 'require/domReady'
     }
 });
 
-require(['jquery', 'app/singleEventListener']);
+require(
+    [
+        'modernizr',
+        'jquery',
+        'app/singleEventListener',
+        'domReady!'
+    ]
+);
