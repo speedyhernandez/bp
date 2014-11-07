@@ -25,6 +25,9 @@
             return {
                 restrict: 'A',
                 replace: true,
+                scope: {
+                    copyText: '@'
+                },
                 templateUrl: 'templates/footer.html'
             };
         });
