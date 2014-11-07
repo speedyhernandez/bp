@@ -1,7 +1,7 @@
 <form name="sampleForm">
     <fieldset>
         <label for="theUrl">Enter a URL</label>
-        <input type="text" name="theUrl" data-ng-model="theUrl">
+        <input type="text" name="theUrl" data-ng-model="customUrl.theUrl">
     </fieldset>
-    <p data-ng-show="theUrl"><a data-ng-href="{{ theUrl }}" data-ng-bind="urlText" target="_blank"></a></p>
+    <p data-ng-show="customUrl.theUrl"><a data-ng-href="{{ customUrl.theUrl }}" data-ng-bind="urlText" target="_blank"></a></p>
 </form>
