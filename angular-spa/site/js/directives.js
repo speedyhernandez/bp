@@ -30,5 +30,16 @@
                 },
                 templateUrl: 'templates/footer.html'
             };
+        })
+
+        .directive('customUrl', function () {
+            return {
+                restrict: 'A',
+                replace: true,
+                scope: {
+                    urlText: '@'
+                },
+                templateUrl: 'templates/customUrl.html'
+            };
         });
 }());
